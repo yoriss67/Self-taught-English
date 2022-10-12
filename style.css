@@ -1,0 +1,1130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/* ---------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.title {
+    padding: 5vh ;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* 🌴NAVBAR */
+nav {
+    /* background-color: #FF5D5D; */
+    background-color: #F0662B;
+    /* background: linear-gradient(#FF5D5D, #FFE3A9); */
+    height: 60px;
+}
+
+/* 左 */
+
+svg {
+    width: 4vw;
+    height: auto;
+}
+
+.navbar-brand {
+    padding-left: 0;
+}
+
+
+
+/* 文字 */
+nav a {
+    color: #fff;
+    padding-left: 20vw;
+}
+
+
+.container-fluid {
+    padding: 0;
+}
+
+.brand-set {
+    padding-left: 20px;
+}
+
+.navbar-collapse {}
+
+/* 文字 */
+.navbar-nav {
+    /* background-color: #FFE3A9; これあるとlaptop幅でダサくなる*/
+    padding-left: 25px;
+}
+
+.nav-item a {
+    color: #000;
+   
+}
+
+.nav-link {
+    color: #fff;
+}
+
+
+
+.navbar-toggler {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    /* border: 5px solid #444; */
+    box-sizing: border-box;
+    border-color: rgba(0, 0, 0, 0);
+    margin-right: 10px;
+    border-color: #fff;
+
+}
+
+.collapsed {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 30px;
+    color: #fff;
+    position: absolute;
+    left: 14px;
+    transition: all 0.5s ease;
+}
+
+.bar1 {
+    /* top: 6.25px; */
+    top: 8px;
+    background-color: #fff;
+}
+
+.bar2 {
+    top: 17.5px;
+    top: 20px;
+    background-color: #fff;
+}
+
+.bar3 {
+    /* bottom: 6.25px; */
+    bottom: 12px;
+    /* bottom: 20px; */
+    background-color: #fff;
+}
+
+
+
+
+/*🌴 HEADER */
+header {
+    padding-top: 300px;
+    padding-bottom: 20vh;
+    background-color: #FFE3A9;
+    text-align: center;
+    position: relative;
+    max-height: 200vh;
+
+}
+
+
+/* 外では見えなくする */
+.inview {
+    opacity: 0;
+}
+
+header h2 {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    /* header h2 {
+        display: none;
+    }
+ */
+    .padding-adjust {
+        margin-top: 0;
+    }
+
+    .introduction {
+        margin: 0 10vw;
+        line-height: 20px;
+    }
+}
+
+/* MAIN HEADER */
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+
+}
+
+.padding-adjust {
+    margin: clamp(10px, 4%, 40px);
+    overflow-x: hidden;
+    margin-top: 15vh;
+
+}
+
+.row-item1,
+.row-item2,
+.row-item3,
+.row-item4 {
+
+    height: 25vmin;
+    /* margin: 0 10px; */
+    border: 5px solid #FFE3A9;
+    border-radius: 10px;
+    color: #fff;
+    padding-top: 10vh;
+    opacity: .7;
+
+
+    /* teratail */
+    transition: opacity 5s;
+
+    /* animation-delay: 5000ms; */
+
+
+
+
+    /* 文字の高さ */
+    /* padding: 20% 0; */
+
+
+    /* margin: 100px 1%;
+
+    width: clamp(20px, 25vw, 50px);*/
+}
+
+
+
+.row-item1 {
+    background-color: blue;
+    /* left: 0px; */
+
+}
+
+.row-item2 {
+    background-color: purple;
+
+    /* left: 200px; */
+}
+
+.row-item3 {
+    background-color: red;
+
+    /* left: 400px; */
+
+}
+
+.row-item4 {
+    background-color: grey;
+
+    /* left: 600px; */
+
+}
+
+/* 最初は見えない */
+
+.second-inview {
+    opacity: 0;
+    /* color: #FFE3A9; */
+}
+
+
+
+/* レスポンシブ */
+
+@media screen and (min-width: 768px) {
+    header {
+        padding-top: 30vh;
+    }
+
+    .row {
+        padding: 0 3vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🌴MAIN */
+main {
+    height: 100vh;
+}
+
+
+/* 🌴quizlet */
+#quizlet {
+    padding: 3vh 2vw;
+    margin: 30px 0;
+}
+
+
+.quizlet-container {
+    display: flex;
+}
+
+.row {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* 左 */
+.quizlet-image-wrapper {
+    /* width: 30%; */
+    padding: 0;
+    height: 15vh;
+}
+
+.quizlet-image-wrapper img {
+    width: 100%;
+    height: 15vh;
+    object-fit: contain;
+    border-radius: 15%;
+    /* margin: 10px; */
+}
+
+/* 真ん中 */
+
+.quizlet-text {
+    text-align: left;
+}
+
+
+/* 右 */
+
+.quizlet-anime {
+    padding: 0 auto;
+    display: inline-block;
+}
+
+
+.flashcard1,
+.flashcard2,
+.flashcard3,
+.flashcard4 {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.flashcard1 {
+    width: 30vw;
+    height: 100px;
+    margin-left: 10%;
+
+}
+
+.flashcard2 {
+    width: 30vw;
+    height: 70px;
+    animation-delay: 800ms;
+}
+
+button {
+    background-color: #fff;
+    border: 0;
+    margin-right: 30px;
+
+}
+
+
+.flashcard3 {
+    width: 25vw;
+    height: 90px;
+    margin-left: 30%;
+    animation-delay: 300ms;
+
+}
+
+.flashcard4 {
+    width: 25vw;
+    height: auto;
+    margin-left: 0%;
+    animation-delay: 500ms;
+
+}
+
+
+.fa-solid {
+    opacity: .2;
+    cursor: pointer;
+}
+
+.fa-solid:hover, small a:hover {
+    color: #F0662B;
+    opacity: 1;
+}
+
+small a {
+    text-decoration: none;
+    opacity: .5;
+}
+
+
+
+/* 768px以下で画面幅いっぱいに */
+@media screen and (max-width: 768px) {
+    .quizlet-anime {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+        padding: 0 auto;
+    }
+
+    .flashcard1,
+    .flashcard2,
+    .flashcard3,
+    .flashcard4 {
+        margin: 0 1%;
+    }
+
+    .flashcard1 {
+        margin-top: 10px;
+    }
+
+    .flashcard2 {
+        margin-top: 40px;
+        margin-left: 70px;
+        width: 35vw;
+    }
+
+    .flashcard3 {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+
+    .flashcard4 {
+        margin-top: 45px;
+        width: 30vw;
+        margin-right: 50px;
+
+    }
+}
+
+
+/* INSIDE OF FLASHCARD */
+.flashcard {
+    padding: 10px;
+    text-align: left;
+
+}
+
+/* ① */
+.icon-name {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.icon-name img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*  */
+
+
+
+/* 🌴podcast */
+
+
+/* スマホ　型 */
+
+.smartphone {
+    width: 20vw;
+    height: 30vh;
+    background-color: #ccc;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+
+/* .smart {
+	
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+  
+    border-color: #444;
+      background-color: #333;
+  
+  
+  
+      width: 295px;
+      height: 532px;
+      border-radius: 40px;
+      border: 2px solid #ddd;
+      margin: 0 auto;
+      padding: 60px 10px;
+      
+      position: relative;
+  
+  
+  }
+  
+  #acenzione-button {
+      background-color: #333;
+      
+      height: 20px;
+      left: -5px;
+      top: 59px;
+      border-radius: 4px 0 0 4px;
+  
+      width: 3px;
+      background: #333;
+      position: absolute;
+      
+  }
+  
+  
+  #volume-su {
+      height: 40px;
+      width: 3px;
+      left: -7px;
+      top: 110px;
+      border-radius: 4px 0 0 4px;
+  
+      width: 5px;
+      background: #333;
+      position: absolute;
+      
+      
+  }
+  
+  #volume-giu {
+      height: 40px;
+      width: 3px;
+      left: -7px;
+      top: 155px;
+      border-radius: 4px 0 0 4px;
+  
+      width: 5px;
+      background: #333;
+      position: absolute;
+      
+  
+  
+  }
+  
+  
+  #dettaglio {
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 100%;
+  }
+  
+  
+  #fotocamera {
+      background: #111;
+      height: 7px;
+      width: 7px;
+      margin: auto;
+  
+      border-radius: 100px;
+      display: block;
+  }
+  
+  #sensore {
+      background: #111;
+      height: 7px;
+      width: 7px;
+      margin: 12px 100px;
+  
+      border-radius: 100px;
+      display: block;
+  }
+  
+  #microfono {
+      background: #111;
+      height: 7px;
+      width: 90px;
+      margin: -19px auto 0;
+      border-radius: 100px;
+  }
+  
+  
+  #schermo {
+      height: 522px;
+      width: 295px;
+      background-color: #fff;
+      box-shadow: 0 0 0 1px    rgba(0,0,0,0.1)inset;
+      overflow: hidden;
+      position: relative;
+      
+  }
+  
+  
+  #bottone {
+      height: 40px;
+      width: 40px;
+      background: #111;
+      margin: 17px auto;
+      border-radius: 100px;
+  }
+  
+  
+  
+  .frame-posizione{
+      
+      margin-left: 0px;
+      margin-right: -1px;
+      display: block;
+  }
+  
+  
+  
+  #header {
+      background: #555;
+      box-shadow: 1px 2px 7px #333;
+  }
+  
+  .wrap {
+      width: 960px;
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  
+  
+  #menu {
+      position: relative;
+      height: 60px;
+  
+  
+  
+  }
+  
+  #menu ul {
+      list-style: none;
+  }
+  
+  #menu ul li {
+      float: left;
+      padding: 3px;
+  
+  }
+  
+  
+  #menu ul li a {
+      display: block;
+      padding: 20px;
+      color: #fff;
+      text-decoration: none;
+    font-weight: 700;
+   
+    
+    
+  }
+  
+  #menu ul li a:hover {
+      background: #444;
+       transition-property: background-color;
+     transition-duration: 0.4s;
+     transition-timing-function: ease;
+     color: #FFF;
+  
+  
+  
+  }
+  
+  
+  .three-lines-menu {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 32px;
+      display: none;
+  }
+  
+  
+  
+  
+      #menu ul {
+          display: none;
+          padding: 60px;
+      
+  
+          
+      }
+  
+      #menu ul li {
+          float: none;
+          background: #555;
+      
+  
+  
+      }
+  
+  
+      .three-lines-menu {
+          display: block;
+          cursor: pointer;
+  
+      }
+  
+      #menu ul.menu-responsive {
+          display: block;
+          width: 100%;
+          margin-top: 0;
+     
+      } */
+  
+
+
+
+
+/*🌴 netflix */
+
+
+#netflix {
+    /* height: 100vh; */
+    /* box-shadow: 0px 1px 36px 30px #fff inset; */
+    background: rgb(69,20,20);
+    background: linear-gradient(0deg, rgba(69,20,20,0.771212708716299) 0%, rgba(68,37,34,0.9532855378479517) 22%, rgba(11,3,1,0.9140698515734419) 45%, rgba(58,19,11,0.9840978627779237) 74%, rgba(42,14,8,0.8860586470916492) 84%, rgba(43,14,8,0.698383577063638) 100%, rgba(34,14,10,0.9364788151588761) 123%);
+    padding: 6% 1%;
+    margin-top: 3vh;
+}
+
+.white {
+    font-size: 20px;
+}
+
+.white:hover {
+    color: #fff;
+}
+
+
+/* .netflix-gradient {
+    height: 10vh;
+    background-color: #FFE3A9;
+}
+ */
+
+.netflix-container {
+    display: flex;
+}
+
+
+/* 左 */
+.screen-parent {
+    display: inline-block;
+    min-height: 15vh;
+    margin-bottom: 5vh;
+}
+
+.left-arrow  {
+    text-align: left;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.screen {
+    background-image: url(./images/pexels-pixabay-2150.jpg);
+    object-fit: contain;
+    /* height: 10vh; */
+    padding: 10vh 2%;
+    
+    color: #fff;
+    font-size: 5vw;
+    min-height: 30vh;
+    /* height: 25vh; */
+}
+
+.screen img {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.screen p {
+    font-size: clamp(10px, 3vw, 40px);
+    box-sizing: border-box;
+}
+
+.purple {
+    color: #B700D7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.purple:hover {
+    color: #2fa8e0;
+    cursor: pointer;
+}
+
+.setting {
+    color: #fff;
+}
+
+.play-border {
+    display: flex;
+    margin: 2vh;
+}
+
+.border {
+    width: 75vw;
+    height: 5px;
+    background-color: #fff;
+    padding: 0 auto;
+    margin: 0 auto;
+
+}
+
+.manipulations {
+    text-align: left;
+    cursor: pointer;
+
+}
+
+
+/* 右 */
+.language-reactor {
+    /* background-color: #fff; */
+    padding: 0;
+    margin-bottom: 5vh;
+
+}
+
+
+.top-anker, .guide, .three-marks {
+    display: flex;
+    color: #fff;
+}
+
+.top-anker {
+    justify-content: space-between;
+    padding: 1vh 5vw;
+}
+
+.guide p, .three-marks i {
+    padding: 3px;
+    margin: 1px;
+    /* border: 1px solid #fff; */
+}
+
+.line-box {
+   max-height:50vh;
+   overflow-y: scroll;
+   padding-bottom: 10vh;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    border: .1px solid #fff;
+    background-color: transparent;
+    margin: 1px 10px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+/* 下 */
+.subtitle-parent {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 5vh;
+}
+
+.english {
+    padding: 0 5vw;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TOGGLE BUTTON */
+
+/* ① ボタンの背景は Ckeckboxの<label> */
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background: #ccc;
+    position: relative;
+    display: inline-flex;
+    border-radius: 46px;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+input[type='checkbox']:checked+label {
+    background-color: #4BD865;
+}
+
+/* ②Toggle Switch の左右に動く 「 ○ 」 */
+.toggle-label::after {
+
+    /* // ○ のスタイル */
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked+label:after {
+    left: 30px;
+}
+
+input {
+    display: none;
+}
+
+/* ---------------- */
+
+.click {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.click:hover {
+    color: #4BD865;
+}
+
+
+
+/* 🌴newspaper */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--共通 CSS--*/
+/* .perspective {
+    perspective: 300px; --perspective--
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background:rgba(204, 204, 204, 0.7);
+    margin: 80px 100px 50px;
+  }
+  
+  .element {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    color: #333;
+    text-align: center;
+    line-height: 150px;
+  }
+  
+  --赤色 box--
+  .perspective01 {
+    transform: perspective(200px) rotateY(40deg);
+    transform-origin: bottom left;
+    background-color: #fd6158;
+  }
+  
+  --黄色 box--
+  .perspective02 {
+    transform: rotateX(60deg);
+    transform-origin: bottom right;
+    background-color: #febe3e;
+  }
+ */

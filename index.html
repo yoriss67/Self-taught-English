@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English study</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="./images/icons8-globe-48.png">
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3715e2b643.js" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- SWIPER cssの上 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      height: 300px;
+      /* position: relative; */
+    }
+
+    .swiper-slide div {
+      width: 100%;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+    }
+
+    .swiper-slide h4 {
+      margin-top: 5vh;
+      /* position: absolute;
+      width: 120vw; */
+      /* transform: translateX(-2%); */
+      color: rgb(0, 149, 255);
+    }
+
+    .swiper-slide h4:hover {
+      text-decoration: underline;
+    }
+
+
+    .swiper-slide p {
+      /* position: absolute; */
+      margin-top: 3vh;
+    }
+
+
+
+    .slide-invisible {
+      opacity: 0;
+    }
+
+    .swiper-slide-active div,
+    .swiper-slide-active img {
+      transform: scale(1.2);
+      border-radius: 5px;
+    }
+
+    /* 自分で */
+    .swiper-slide p,
+    h4 {
+      display: none;
+    }
+
+    .swiper-slide a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .swiper-slide-active p {
+      display: block;
+    }
+
+
+    .swiper-slide-active h4 {
+      display: block;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="style.css">
+  <!-- ANIMATE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-fluid">
+      <div class="brand-set">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+          </path>
+        </svg>
+        <a class="navbar-brand" href="">Self-taught English!</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bar1  "></span>
+        <span class="navbar-toggler-icon bar2  "></span>
+        <span class="navbar-toggler-icon bar3  "></span>
+
+      </button>
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="#quizlet">Quizlet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#podcast">Podcast</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#netflix">Netflix</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link text-dark" href="#newspaper">Newspaper</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+
+    <!-- FIRST ANIMATION -->
+    <h2 class="inview title">Hello, world!!</h2>
+
+    <div class="introduction">
+      <h5>Welcome to Self-taught English!</h5>
+      <p>The more understand English, the more opportunity for you to connect and gain wisdom from people from all
+        around the world.</p>
+      <p>This website is a piece of my english study method. I hope this helps you to boost your English journey!</p>
+
+    </div>
+
+
+    <!-- MAIN HEADER -->
+    <div class="container-fluid ">
+      <div class="row padding-adjust">
+        <div class="row-item1 col-sm-12 col-md-6 col-lg-3  second-inview"><a class="nav-link /*active*/"
+            aria-current="page" href="#quizlet">Quizlet</a></div>
+        <div class="row-item2 col-sm-12 col-md-6 col-lg-3  second-inview"><a class="nav-link"
+            href="#podcast">Podcast</a></div>
+        <div class="row-item3 col-sm-12 col-md-6 col-lg-3  second-inview"><a class="nav-link"
+            href="#netflix">Netflix</a></div>
+        <!-- <div class="row-item4 col-sm-12 col-md-6 col-lg-3  second-inview"><a class="nav-link"
+            href="#newspaper">Newspaper</a></div> -->
+
+
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- QUIZLET -->
+    <div id="quizlet">
+
+      <h2 class="title">Quizlet</h2>
+
+      <div class="quizlet-container container-fluid">
+        <div class="row">
+          <div class="quizlet-image-wrapper col-md-1 col-2">
+            <img src="./images/unnamed.png" alt="">
+          </div>
+          <div class="quizlet-text col-md-4 col-8">
+            <p>You cn learn anything whenever and wherever you want!</p>
+            <p>Enhance yourself with tools, flashcards and solutions given by experts.</p>
+            <p>I have been saved by this in terms of building up my English vocabulary. I often use in a small pocket of
+              time and enjoy great experience.</p>
+          </div>
+          <div class="quizlet-anime col-md-5 col-12">
+
+
+            <div class="flashcard1 flashcard ">
+              <p>英単語１　2022/10/09</p>
+              <div class="icon-name">
+                <img src="./images/marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" alt="">
+                <p>ioriiii_sy</p>
+              </div>
+            </div>
+
+
+            <button class="flashcard2 flashcard ">
+              <!-- <div class="head">  -->
+              <p>男子・女子の社交クラブ<i class="fa-regular fa-hand-pointer"></i></p>
+              <!-- </div> -->
+              <!-- <div class="tail opaci">
+            <p>Fraternity / Sorority</p>
+          </div> -->
+            </button>
+            <button class="flashcard3 flashcard">
+              <p>魚の目<i class="fa-regular fa-hand-pointer"></i></p>
+            </button>
+            <div class="flashcard4 flashcard">
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire"></i>
+              <small>
+                <a href="https://quizlet.com" target="_blank">
+                  start from here
+                </a>
+               </small>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- PODCAST -->
+    <div id="podcast">
+
+<h2 class="title">Podcast</h2>
+
+      <!-- swiper -->
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/HAPA Eikaiwa.png" alt="">
+            <a href="https://hapaeikaiwa.com/blog/category/podcast-column/" target="_blank">
+              <h4>Hapa Eikaiwa podcast</h4>
+              <i class="fa-solid fa-hand-back-point-left"></i>
+              <!-- <p> Thanks to the flow of the content, which English and Japanese are played in turn, you can instantly understand natural English and Japanese translation😊</p> -->
+              <p>Length: 20 mins
+
+              </p>
+
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/Nikkei Asia.png" alt="">
+            <a href="https://asia.nikkei.com/Spotlight/Podcast" target="_blank">
+              <h4>Asia Stream</h4>
+              <p>Length: 20~50 mins</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/Real Life.png" alt="">
+            <a href="https://reallifeglobal.com/radio-podcast/" target="_blank">
+              <h4>RealLife English</h4>
+              <p>Length: 30 mins</p>
+
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/all ears english.png" alt="">
+            <a href="https://www.allearsenglish.com/" target="_blank">
+              <h4>All Ears English Podcast</h4>
+              <p>Length: 30 mins</p>
+
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/lex fridman.png" alt="">
+            <a href="https://lexfridman.com/podcast/" target="_blank">
+              <h4>Lex Fridman Podcast</h4>
+              <p>Length: over 2 hrs</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/muko's corner.png" alt="">
+            <a href="https://podcasts.apple.com/us/podcast/mukos-corner/id1560612997" target="_blank">
+              <h4>Muko's Corner</h4>
+              <p>Length: 40 mins</p>
+
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <!-- <div class="smartphone"></div> -->
+            <img src="./images/NHK World Japan.png" alt="">
+            <a href="https://www3.nhk.or.jp/nhkworld/en/podcast/" target="_blank">
+              <h4>English News</h4>
+              <p>Length: 10 mins</p>
+
+            </a>
+          </div>
+          <!-- <div class="swiper-slide">
+            <div class="smartphone"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="smartphone"></div>
+          </div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- 日本語 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- -------- -->
+      </div>
+
+
+
+
+
+      <!-- スマホ　型 -->
+
+      <!-- <div class="smart">
+  <div id="dettaglio">
+  <div id="sensore"></div>
+  <div id="microfono"></div>
+</div>
+<div id="acenzione-button"></div>
+<div id="volume-su"></div>
+<div id="volume-giu"></div>
+<div id="schermo">
+<div class="frame-posizione">
+  <div id="header">
+<div class="wrap">
+<div id="menu" class="menu-responsive">
+     <ul>
+          <li><a href="#">HOME</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">WORK</a></li>
+                </ul>
+<div class="three-lines-menu"> &#9776;</div> -->
+
+
+      <!-- </div>fine schermo
+    </div>fine frame-posizione
+  </div>fine header
+</div>fine wrap
+</div>fine menu-responsive menu
+<div id="bottone"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!--⭐ NETFLIX -->
+    <div id="netflix">
+
+
+
+
+      <!-- <div class="netflix-gradient"></div> -->
+
+      <!-- 🤔ribbon入れたい -->
+
+      <div class="netflix-container container-fuid">
+        <div class="row">
+          <!-- 左 -->
+          <div class="screen-parent col-sm-12 col-md-8">
+            <div class="left-arrow">
+              <i class="fa-solid fa-arrow-left-long white"></i>
+            </div>
+
+            <div class="screen">
+              <img src="./images/Netflix-Logo-free.webp" alt="">
+              <p>with <br> <br> <a href="https://www.languagereactor.com/" target="_blank">
+                <span class="purple"> Language Reactor</span> </p>
+            </a>
+            </div>
+
+            <div class="setting">
+              <div class="play-border">
+                <p>0:00</p>
+                <div class="border"></div>
+                <p>15:00</p>
+              </div>
+
+              <div class="manipulations">
+                <!-- <i class="white fa-solid fa-backward"></i> -->
+                <i class="fa-regular fa-square-caret-left"></i>
+
+
+                <i class="white fa-regular fa-circle-play"></i>
+
+                <!-- <i class="fa-regular fa-circle-stop"></i> -->
+
+                <i class="fa-regular fa-square-caret-right"></i>
+
+                <i class="white fa-solid fa-volume-high"></i>
+
+                <i class="white fa-solid fa-gear"></i>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 右 -->
+          <div class="language-reactor col-sm-12 col-md-4 ">
+            <div class="top-anker">
+              <div class="guide">
+                <p>字幕</p>
+                <p>単語</p>
+                <p>保存済み</p>
+              </div>
+              <div class="three-marks">
+                <i class="white fa-solid fa-gear" style="color: #fff"></i>
+                <i class="white fa-solid fa-share-from-square" style="color: #fff"></i>
+                <i class="white fa-solid fa-xmark" style="color: #fff"></i>
+
+              </div>
+            </div>
+
+            <div class="line-box">
+              <div class="many-types"></div>
+
+
+
+              <div class="note">
+                <div class="sentence">
+                  <p>with early-stage Hodgkin's lymphoma.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>There's this battle for eyeballs in the journalism world.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>-[police siren whoops] -...and I get pulled over.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>Do they look different than the feces?</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+
+              <div class="note">
+                <div class="sentence">
+                  <p>underneath the lectern</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+
+              <div class="note">
+                <div class="sentence">
+                  <p>Perjury. Creation myths need a devil.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>You were kind of rough on him.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>Even a few people leaving would reverberate through the user base.</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+
+              <div class="note">
+                <div class="sentence">
+                  <p>Good race, boys. Take the bitter with the better, eh?</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              
+              <div class="note">
+                <div class="sentence">
+                  <p>This unsub is a big dog,</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                <div class="sentence">
+                  <p>[vehicle crunching on gravel]</p>
+                </div>
+                <div class="trashbox">
+                  <i class="fa-solid fa-trash-can white"></i>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <!-- 下 -->
+          <div class="subtitle-parent col-sm-12 col-md-12 ">
+            <div class="subtitle">
+              <div class="english">
+                <p>Netflix is not only for entertainment, but also an appropriate material to learn real English. <br> With a Chrome extension "Language Reactor", you're gonna immerse yourself into lively and latest world. Moreover, you can take a note on right side of the screen. </p>
+              </div>
+            </div>
+            <div class="side-gadget">
+              <!-- TOGGLE BUTTON -->
+              <div class="toggle-switch">
+                <input type="checkbox" id="toggle" class="toggle-input">
+                <label for="toggle" class="toggle-label"></label>
+              </div>
+
+              <div class="click">
+                <!-- <i class="fa-solid fa-gear white"></i> -->
+                <i class="fa-regular fa-hand-point-up"></i>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- NEWSPAPER -->
+    <div id="newspaper"></div>
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+  <!-- 赤色 box
+<div class="perspective">
+	<div class="element perspective01">(200px) (40deg)</div>
+</div>
+
+黄色 box
+<div class="perspective">
+	<div class="element perspective02">rotateX(60deg)</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer></footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <!-- inview library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <!-- <script src="js/3-1-2.js"></script>　 -->
+
+  <!-- SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    function slideVisibleToggle(sWrap) {
+      sWrap.forEach(function (slideItem) {
+        if (slideItem.classList.contains('swiper-slide-visible') == true) {
+          if (slideItem.classList.contains('slide-invisible') == true) {
+            slideItem.classList.remove('slide-invisible');
+          }
+        } else {
+          if (slideItem.classList.contains('slide-invisible') == false) {
+            slideItem.classList.add('slide-invisible');
+          }
+        }
+      });
+    }
+
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        disableOnInteraction: false,
+        reverseDirection: false,
+        pauseOnMouseEnter: true,
+      },
+      effect: "coverflow",
+      centeredSlides: true,
+      slidesPerView: 3,
+      breakpoints: {
+        601: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: document.querySelectorAll('.swiper-slide').length,
+        }
+      },
+      loop: true,
+      coverflowEffect: {
+        rotate: 10,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        slideChange: function () {
+          slideVisibleToggle(document.querySelectorAll('.swiper-slide'));
+        },
+      },
+    });
+  </script>
+
+
+
+  <script src="index.js" defer></script>
+
+
+
+
+</body>
+
+</html>
