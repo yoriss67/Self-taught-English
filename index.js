@@ -154,8 +154,8 @@ $('.flashcard2').click(function() {
 
 $('.flashcard3').click(function() {
   // $(this).addClass('animate_animated animate__flipInY animate__faster');
-
-  $(this).toggleClass('animate_animated animate__flipInY animate__faster');
+  
+  var initializeAnime = $(this).addClass('animate_animated animate__flipInY animate__faster');
 
 if($('.flashcard3').text() == `Corn → "I have a foot corn on my left foot."`) {
   $(this).text('魚の目');
@@ -164,8 +164,8 @@ if($('.flashcard3').text() == `Corn → "I have a foot corn on my left foot."`) 
   $(this).text(`Corn → "I have a foot corn on my left foot."`);
 
 }
-  // $('.head').toggle();
-  // $('.tail-opaci').toggle();
+
+  setTimeout(initializeAnime, 1000);
 
 
 });
@@ -247,16 +247,63 @@ if($('.english p').html() == 'Netflix is not only for entertainment, but also an
 
 
 
-$(function() {
-$('.toggle-switch').click(function() {
-  $('.japanese').toggle();
-})
-});
+// $(function() {
+// $('.toggle-switch').click(function() {
+//   $('.japanese').toggle();
+// })
+// });
 
 
 
+// JavaScript超入門コース 合併版【JavaScriptの超基本的な部分をたった1時間で学べます】【プログラミング初心者向け入門講座】
+// 1:06:00
+
+class Student {
+  constructor(name) {
+    this.name = name;
+  }
+
+  // クラス①
+  cal_avg(data) {
+    let sum = 0;
+    for(let i = 0; i < data.length; i++) {
+      // sum += i; 間違え
+      sum += data[i];
+    }
+// 書いてなかったとこ
+let avg = sum / data.length;
+return avg;
+  }
 
 
+
+  // クラス②
+  judge(avg) {
+    // 🤬
+    let result;
+    if (60 <= avg) {
+     result = 'passed';
+    } else //if (data <= avg)//
+     {
+     result = 'failed';
+    }
+
+    // 🤬
+    return result;
+  }
+}
+
+let a001 = new Student('sato');
+let data = [70, 65, 50, 90, 30];
+let avg = a001.cal_avg(data);
+//🤬// 
+let result = a001.judge(avg);
+
+
+console.log(data.length);
+console.log(a001.name);
+console.log(avg);
+console.log(result);
 
 
 
